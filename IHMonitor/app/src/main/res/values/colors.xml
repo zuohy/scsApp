@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_app_background">#edeff2</color>
+    <color name="color_status_bar">#45aef8</color>
+    <color name="color_action_bar">#45aef8</color>
+    <color name="color_app_main_color">#45aef8</color>
+    <color name="color_transport">#00FFFFFF</color>
+    <color name="color_e5ffffff">#e5ffffff</color>
+    <color name="color_cc000000">#cc000000</color>
+    <color name="color_4c000000">#4c000000</color>
+    <color name="color_4cffffff">#4cffffff</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_black">#000000</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_dcdcdc">#dcdcdc</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_808080">#808080</color>
+    <color name="color_2f2f2f">#2f2f2f</color>
+    <color name="color_157efb">#157efb</color>
+    <color name="color_3b95ff">#3b95ff</color>
+    <color name="color_3e9cdf">#3e9cdf</color>
+    <color name="color_aedeff">#aedeff</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_32b2c9">#32b2c9</color>
+    <color name="color_efa71d">#efa71d</color>
+    <color name="color_1d9eef">#1d9eef</color>
+    <color name="color_05cfa7">#05cfa7</color>
+    <color name="color_95d009">#95d009</color>
+</resources>

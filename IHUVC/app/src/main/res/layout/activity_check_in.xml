@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:doctor="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_white"
+    tools:context="cn.longmaster.ihuvc.ui.CheckInActivity">
+
+    <cn.longmaster.ihuvc.view.AppActionBar
+        android:id="@+id/activity_check_in_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        doctor:function="title|right_text"
+        doctor:rightText="@string/update"
+        doctor:rightTextClick="onRightClick"
+        doctor:rightTextColor="@color/text_color_white_b3b3b3"
+        doctor:titleColor="@color/c_white"
+        doctor:titleText="@string/data_collection" />
+
+    <ImageView
+        android:id="@+id/activity_check_in_top_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_check_in_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:src="@drawable/ic_navigation_page" />
+
+    <LinearLayout
+        android:id="@+id/activity_check_in_number_ll"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/activity_check_in_top_img"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/linear_layout_border"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/serial_number"
+            android:textColor="#666666"
+            android:textSize="@dimen/f_16sp" />
+
+        <EditText
+            android:id="@+id/activity_check_in_serial_number_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/activity_check_in_serial_number_error_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/number_non_existent"
+            android:textColor="@color/color_fd5555"
+            android:textSize="@dimen/f_12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_check_in_password_ll"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/activity_check_in_number_ll"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/linear_layout_border"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/password"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/f_16sp" />
+
+        <EditText
+            android:id="@+id/activity_check_in_password_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/activity_check_in_password_error_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/relevance_pwd_error"
+            android:textColor="@color/color_fd5555"
+            android:textSize="@dimen/f_12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_check_in_confirm"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/activity_check_in_password_ll"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_linear_layout"
+        android:gravity="center"
+        android:text="@string/determine"
+        android:textColor="@color/c_white"
+        android:textSize="@dimen/f_18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/data_collection"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/f_24sp" />
+
+        <TextView
+            android:id="@+id/action_check_version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="@string/version_number"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/f_12sp" />
+    </LinearLayout>
+</RelativeLayout>

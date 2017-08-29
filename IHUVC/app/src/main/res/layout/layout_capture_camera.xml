@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:doctor="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.cameraview.CameraView
+        android:id="@+id/layout_capture_camera_cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        doctor:autoFocus="true"
+        doctor:facing="back"
+        doctor:flash="auto" />
+
+</RelativeLayout>

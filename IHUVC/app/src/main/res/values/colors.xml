@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_app_background">#edeff2</color>
+    <color name="color_app_main_color">#45aef8</color>
+    <color name="transparent">#00000000</color>
+    <color name="GRAY">#ff808080</color>
+    <color name="color_cc000000">#cc000000</color>
+    <color name="c_black_60">#99000000</color>
+    <color name="color_fd5555">#fd5555</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_4c4c4c">#4c4c4c</color>
+    <color name="color_45aef8">#45aef8</color>
+    <color name="color_359fe9">#359fe9</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_272727">#272727</color>
+    <color name="color_0091ff">#0091ff</color>
+    <color name="color_transport">#00FFFFFF</color>
+    <color name="color_dcdcdc">#dcdcdc</color>
+    <color name="color_808080">#808080</color>
+    <color name="color_157efb">#157efb</color>
+    <color name="color_3b95ff">#3b95ff</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_c8c7cc">#c8c7cc</color>
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="color_ffffff">#ffffff</color>
+
+    <color name="c_white">#FFFFFF</color>
+    <color name="c_black">#000000</color>
+    <color name="c_gray">#EBEBEA</color>
+    <color name="c_tans_all">#00FFFFFF</color>
+    <color name="c_tans">#50FFFFFF</color>
+    <color name="c_green_light">#5ABDB4</color>
+    <color name="c_achieve_cj">#595857</color>
+    <color name="c_achieve_frame">#DBDCDC</color>
+    <color name="c_achieve_bg">#EEEDEE</color>
+    <color name="c_achieve_str">#C8C9CA</color>
+    <color name="color999999">#999999</color>
+    <color name="color66000000">#66000000</color>
+</resources>

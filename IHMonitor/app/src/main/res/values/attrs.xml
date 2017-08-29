@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppActionBar">
+        <attr name="titleText" format="string" />
+        <attr name="leftBtnImage" format="reference" />
+        <attr name="leftText" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="rightSecondText" format="string" />
+        <attr name="rightBtnImage" format="reference" />
+        <attr name="barBackground" format="color" />
+        <attr name="statusBarColor" format="color" />
+        <attr name="function">
+            <flag name="left_btn" value="1" />
+            <flag name="title" value="2" />
+            <flag name="right_text" value="4" />
+            <flag name="right_second_text" value="32" />
+            <flag name="left_text" value="16" />
+            <flag name="right_btn" value="8" />
+        </attr>
+        <attr name="leftClick" format="string" />
+        <attr name="leftTextClick" format="string" />
+        <attr name="rightTextClick" format="string" />
+        <attr name="rightSecondTextClick" format="string" />
+        <attr name="rightBtnClick" format="string" />
+        <attr name="titleClick" format="string" />
+        <attr name="showStatusBar" format="boolean" />
+        <attr name="titleColor" format="color" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightSecondTextColor" format="color" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="titileTextLimit" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MainTabItem">
+        <attr name="tabText" format="string" />
+        <attr name="isSelected" format="boolean" />
+        <attr name="normalImage" format="reference" />
+        <attr name="selectedImage" format="reference" />
+        <attr name="showRedPoint" format="boolean" />
+    </declare-styleable>
+
+    <!--用户中心的-->
+    <declare-styleable name="UserItem">
+        <attr name="itemText" format="string" />
+        <attr name="infoText" format="string" />
+        <attr name="title_function">
+            <flag name="left_icon" value="1" />
+            <flag name="item_title" value="2" />
+            <flag name="item_info" value="4" />
+            <flag name="right_arrow" value="8" />
+        </attr>
+        <attr name="leftIconImage" format="reference" />
+        <attr name="itemColor" format="color" />
+        <attr name="infoTextColor" format="color" />
+        <attr name="itemClick" format="string" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ConsultTabItem">
+        <attr name="consultTabItemTitleText" format="string" />
+        <attr name="consultTabItemValueText" format="string" />
+    </declare-styleable>
+
+    <!--上面图片下面文字-->
+    <declare-styleable name="IconView">
+        <attr name="topIconImage" format="reference" />
+        <attr name="bottomText" format="string" />
+        <attr name="bottomTextColor" format="color" />
+        <attr name="bottomTextSize" format="dimension" />
+        <attr name="textPaddingTop" format="dimension" />
+    </declare-styleable>
+    <!--左边图片右边文字-->
+    <declare-styleable name="IconViewHor">
+        <attr name="leftIconImg" format="reference" />
+        <attr name="viewText" format="string" />
+        <attr name="viewTextColor" format="color" />
+        <attr name="viewTextSize" format="dimension" />
+        <attr name="textPaddingLeft" format="dimension" />
+        <attr name="viewGravity">
+            <flag name="center_vertical" value="16" />
+            <flag name="center" value="17" />
+            <flag name="center_horizontal" value="1" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+        </attr>
+    </declare-styleable>
+    <!--左边文字，右边文字-->
+    <declare-styleable name="TextViewLine">
+        <attr name="textViewLeftText" format="string" />
+        <attr name="textViewLeftTextColor" format="color" />
+        <attr name="textViewLeftTextSize" format="dimension" />
+        <attr name="textViewRightText" format="string" />
+        <attr name="textViewRightTextColor" format="color" />
+        <attr name="textViewRightTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MyGridLayout">
+        <attr name="numColumns" format="integer" />
+        <attr name="itemMarginHor" format="dimension" />
+        <attr name="itemMarginVer" format="dimension" />
+    </declare-styleable>
+
+    <!--LoadingButton-->
+    <declare-styleable name="LoadingButton">
+        <attr name="pbText" format="string" />
+        <attr name="pbLoadingText" format="string" />
+        <attr name="pbTextSize" format="dimension" />
+        <attr name="pbTextColor" format="color|reference" />
+        <attr name="pbProgressColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DateMonthView">
+        <attr name="year" format="integer" />
+        <attr name="month" format="integer" />
+        <attr name="title_height" format="dimension" />
+        <attr name="weak_background" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="StringPicker">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColorItem" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="adapter" format="string" />
+        <attr name="currentItem" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DatePicker">
+        <attr name="showTitle" format="boolean" />
+        <attr name="startDate" format="string" />
+        <attr name="endDate" format="string" />
+        <attr name="currentDate" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="pickerview_textSize" format="dimension" />
+        <attr name="pickerview_textColorOut" format="color" />
+        <attr name="pickerview_textColorCenter" format="color" />
+        <attr name="pickerview_dividerColor" format="color" />
+    </declare-styleable>
+</resources>

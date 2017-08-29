@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:doctor="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <cn.longmaster.ihmonitor.view.AppStatusBar
+        android:id="@+id/activity_browser_statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_status_bar" />
+
+    <RelativeLayout
+        android:id="@+id/activity_browser_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_action_bar"
+        android:layout_below="@+id/activity_browser_statusbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/activity_browser_back_imagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/ic_actionbar_back" />
+
+        <TextView
+            android:id="@+id/activity_browser_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_18" />
+
+        <TextView
+            android:id="@+id/activity_browser_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/blue"
+            android:text="消息"
+            android:textSize="@dimen/font_size_16" />
+
+        <ImageButton
+            android:id="@+id/activity_browser_msg_imagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/ucerter_message_redpoint" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/activity_browser_browser_wv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/activity_browser_actionbar"
+        android:layerType="software" />
+
+
+    <ProgressBar
+        android:id="@+id/activity_browser_top_loading_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/activity_browser_actionbar"
+        android:layout_marginTop="-3dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/bg_browser_loading_progressbar" />
+
+</RelativeLayout>

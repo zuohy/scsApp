@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:doctor="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_data_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5f5"
+    android:orientation="vertical"
+    tools:context="cn.longmaster.ihuvc.ui.MaterialTypeActivity">
+
+    <cn.longmaster.ihuvc.view.AppActionBar
+        android:id="@+id/activity_data_type_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        doctor:function="left_text|title|"
+        doctor:leftText="@string/quit"
+        doctor:leftTextClick="onLeftClick"
+        doctor:leftTextDrawableLeft="@drawable/ic_actionbar_back_white"
+        doctor:titleColor="@color/c_white"
+        doctor:titleText="@string/doctor_number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/select_updata_number"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/f_16sp" />
+
+    <ListView
+        android:id="@+id/activity_data_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@null" />
+
+</LinearLayout>

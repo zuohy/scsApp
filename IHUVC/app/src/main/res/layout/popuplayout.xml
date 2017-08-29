@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/bg_pop_arrow"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/popup_ll"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="9dp"
+        android:background="@drawable/bg_popwindows"
+        android:orientation="vertical"
+        android:paddingBottom="1.5dp"
+        android:paddingEnd="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingStart="1dp">
+
+        <TextView
+            android:id="@+id/pop_high_shot_instrument"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/high_shot_instrument"
+            android:textColor="@color/c_white"
+            android:textSize="@dimen/f_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/c_achieve_str" />
+
+        <TextView
+            android:id="@+id/pop_dermatoscope"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/dermatoscope"
+            android:textColor="@color/c_white"
+            android:textSize="@dimen/f_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/c_achieve_str" />
+
+        <TextView
+            android:id="@+id/pop_rear_camera"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/rear_camera"
+            android:textColor="@color/c_white"
+            android:textSize="@dimen/f_16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/c_achieve_str" />
+
+        <TextView
+            android:id="@+id/pop_update"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/update"
+            android:textColor="@color/c_white"
+            android:textSize="@dimen/f_16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

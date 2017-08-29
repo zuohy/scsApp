@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">39资料采集站</string>
+
+    <string name="select">Select USB Web Camera</string>
+    <string name="camera">Camera</string>
+    <string name="refresh">Refresh</string>
+    <string name="no_device">No USB camera found</string>
+
+    <string name="press_again_back_home">再按一次返回键回到桌面</string>
+    <string name="camera_permission_confirmation">应用需要获取设备的摄像头权限才能进行拍摄，请确定。</string>
+    <string name="camera_permission_not_granted">摄像头权限获取失败，无法进行拍摄</string>
+    <string name="sd_permission_not_granted">存储权限获取失败，无法进行拍摄，请到权限管理中开启</string>
+
+    <string name="custom_progress_dialog_loading">加载中</string>
+    <string name="custom_progress_dialog_load_success">加载成功</string>
+    <string name="custom_progress_dialog_load_fail">加载失败,请重试!</string>
+    <string name="file_uploading">文件上传中&#8230;</string>
+    <string name="be_uploading">正在上传</string>
+    <string name="be_captureing">正在采集</string>
+    <string name="capture_failed">采集失败，请重试</string>
+    <string name="capture_success">采集成功</string>
+
+    <!-- context -->
+    <string name="s_null">null</string>
+    <string name="s_to_scan">驱动外设</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="serial_number">编号:</string>
+    <string name="number">编号 %s</string>
+    <string name="doctor_number">就诊编号: %s</string>
+    <string name="patient_name">患者 %s</string>
+    <string name="high_shot_instrument">高拍仪</string>
+    <string name="dermatoscope">皮肤镜</string>
+    <string name="mobile_shooting">手机拍摄</string>
+    <string name="rear_camera">后置摄像头</string>
+
+    <string name="password">密码:</string>
+    <string name="determine">确定</string>
+    <string name="data_collection">资料采集</string>
+    <string name="version_number">For Android v%1$s</string>
+    <string name="number_non_existent">编号不存在</string>
+    <string name="relevance_pwd_error">密码不正确</string>
+    <string name="update">检查更新</string>
+    <string name="quit">退出</string>
+    <string name="high_shot_data_collection">高拍仪采集资料</string>
+    <string name="high_shot_content">如果高拍仪无法使用，可以尝试以下办法解决</string>
+    <string name="high_shot_content_method">1、安装并确认软件版本为最新版\n2、开启高拍仪电源 \n3、使用数据线连接高拍仪和手机 \n服务热线：400&#8211;860&#8211;3939</string>
+    <string name="dermatoscope_data_collection">使用皮肤镜采集资料</string>
+    <string name="dermatoscope_content">如皮肤镜无法使用，您可以尝试一下办法解决问题：</string>
+    <string name="dermatoscope_content_method">1、安装并确认软件版本为最新版\n2、确定皮肤镜是否和手机连接成功 \n3、确定是否开启使用权限 \n服务热线：400&#8211;860&#8211;3939</string>
+    <string name="close">关闭</string>
+    <string name="rear_camera_data_collection">使用手机后置摄像头采集资料</string>
+    <string name="rear_camera_content">如果手机后置摄像头无法使用，可以尝试以下办法解决</string>
+    <string name="rear_camera_content_method">1、安装并确认软件版本为最新版\n2、设置-权限-开启对摄像机的调用权限\n3、避免后置摄像头被遮挡\n服务热线：400&#8211;860&#8211;3939</string>
+    <string name="no_available_update">无可用更新</string>
+    <string name="update_content">您当前使用的版本为最新版。\n服务热线：400&#8211;860&#8211;3939</string>
+    <string name="new_version_title">新版本来了</string>
+    <string name="new_version">39互联网医院 资料采集V%1$s可更新使用。\n服务热线：400&#8211;860&#8211;3939</string>
+    <string name="update_date">更新</string>
+    <string name="version_update_downloading">正在下载：39互联网医院资料采集客户端</string>
+    <string name="update_insert_sdcard">对不起，请插入SD卡</string>
+    <string name="update_sdcard_size_not_enough">内存卡空间不足</string>
+    <string name="select_updata_number">选择要上传资料的患者编号</string>
+    <string name="picture_number">共 %s张图片</string>
+    <string name="patient_number">%s号患者</string>
+
+</resources>

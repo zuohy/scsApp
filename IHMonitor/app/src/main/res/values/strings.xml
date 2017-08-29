@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">QN</string>
+    <string name="loading_data">数据加载中&#8230;</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="load_data_faild">数据加载失败,请重试</string>
+    <string name="no_network_connection">网络环境不稳定，请重试</string>
+    <string name="version_new_found">发现新版本</string>
+    <string name="version_latest">最新版本：</string>
+    <string name="version_latest_size">新版本大小：</string>
+    <string name="version_latest_feature">更新内容：</string>
+    <string name="version_update_right_now">立即更新</string>
+    <string name="version_update_try_later">以后再说</string>
+    <string name="version_update_downloading">正在下载：QN</string>
+    <string name="update_run_background">后台运行</string>
+    <string name="update_insert_sdcard">对不起，请插入SD卡</string>
+    <string name="update_sdcard_size_not_enough">内存卡空间不足</string>
+    <string name="sure">确&#160;定</string>
+    <string name="confirm">确&#160;认</string>
+    <string name="cancel">取&#160;消</string>
+    <string name="title_dialog_tip">提示</string>
+    <string name="account_login_at_other_place_tip">您的账号在另一台设备登录，您被迫下线。</string>
+
+    <string name="version_num">V 1.0</string>
+
+    <!--登录页-->
+    <string name="login_username">用户名：</string>
+    <string name="login_username_hint">请输入用户名</string>
+    <string name="login_password">密　码：</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_username_error">用户名不能为空</string>
+    <string name="login_password_error">密码不能为空</string>
+    <string name="login_logining">登录中&#8230;</string>
+    <string name="login_make_sure_logout">确定退出登录?</string>
+    <string name="login_error">账号或密码不正确</string>
+
+    <!--服务类型-->
+    <string name="service_type_remote_consult">视频会诊</string>
+    <string name="service_type_remote_advice">视频会诊</string>
+    <string name="service_type_remote_outpatient">门诊</string>
+    <string name="service_type_remote_wards">查房</string>
+    <string name="service_type_remote_image_consult">影像会诊</string>
+
+    <!--预约-->
+    <string name="appointment_room_id">房间ID:%d</string>
+    <string name="appointment_disease_name">疾病名称:%s</string>
+    <string name="appointment_superior_doctor">D:%s</string>
+    <string name="appointment_first_doctor">d:%s</string>
+    <string name="appointment_patient_name">患者姓名:%s</string>
+    <string name="appointment_empty">&#160;&#160;暂无就诊</string>
+    <string name="appointment_points">&#8230;</string>
+
+    <!--诊室-->
+    <string name="consult_room_consult_num">就诊编号：%d</string>
+    <string name="consult_room_read_record">查看病历</string>
+    <string name="consult_room_exit_room">退出房间</string>
+    <string name="consult_room_superior_doctor">上级专家：%s</string>
+    <string name="consult_room_attending_doctor">首诊医生：%s</string>
+
+    <string name="consult_room_higher_class_doctor">上级专家</string>
+    <string name="consult_room_first_doctor">首诊医生</string>
+    <string name="consult_room_doctor_assistant">医生助理</string>
+    <string name="consult_room_patient">患者</string>
+    <string name="consult_room_conference_staff">会议人员</string>
+    <string name="consult_room_mdt">MDT</string>
+    <string name="consult_room_mdt_doctor">医生</string>
+    <string name="consult_room_mdt_patient">患者家属</string>
+
+    <string name="video_room_state_appoint_going">就诊正在进行</string>
+
+    <string name="video_room_state_exist_room_failed">退出房间失败,请重试!(%d)</string>
+    <string name="video_room_state_higher_doctor_entered_room">上级专家进入诊室</string>
+    <string name="video_room_state_doctor_entered_room">首诊医生进入诊室</string>
+    <string name="video_room_state_patient_entered_room">患者进入诊室</string>
+    <string name="video_room_state_assistant_entered_room">医生助理进入诊室</string>
+    <string name="video_room_state_doctor_assistant_entered_room">医生助理已进入诊室</string>
+    <string name="video_room_state_doctor_assistant_leave_room">医生助理已离开诊室</string>
+    <string name="video_room_state_subscribe_patients">已切换查看患者的视频图像</string>
+    <string name="video_room_state_subscribe_first_doctor">已切换查看首诊医生的视频图像</string>
+    <string name="video_room_state_subscribe_experts">已切换查看上级专家的视频图像</string>
+    <string name="video_room_state_higher_doctor_leave">上级专家已离开</string>
+    <string name="video_room_state_doctor_leave">首诊医生已离开</string>
+    <string name="video_room_state_patient_leave">患者已离开</string>
+    <string name="video_room_state_assistant_leave">医生助理已离开</string>
+    <string name="video_room_state_kick_off">您被移出诊室</string>
+    <string name="video_dialog_exit_message">确认要退出视频吗？</string>
+
+
+    <string name="consult_room_voice_mode">语音模式</string>
+    <string name="consult_room_voice_mode_voice_tip">正在使用语音模式</string>
+    <string name="consult_room_voice_mode_other_party_voice_tip">对方已切换至语音模式</string>
+    <string name="room_camera_abnormal">摄像头异常</string>
+    <string name="consult_room_toast_change_back_cam">已切换至后置摄像头</string>
+    <string name="consult_room_toast_change_front_cam">已切换至前置摄像头</string>
+    <string name="room_state_net_disconnected">网络连接断开</string>
+    <string name="room_state_btn_retry">重试</string>
+</resources>

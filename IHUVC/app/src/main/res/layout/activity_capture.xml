@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:doctor="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.longmaster.ihuvc.ui.CaptureActivity">
+
+    <cn.longmaster.ihuvc.view.ProportionLayout
+        android:id="@+id/activity_capture_layout_pl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        doctor:scaleSize="1.33">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/activity_capture_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c_black" />
+    </cn.longmaster.ihuvc.view.ProportionLayout>
+
+
+    <cn.longmaster.ihuvc.view.MyStatusBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color66000000" />
+
+    <cn.longmaster.ihuvc.view.AppActionBar
+        android:id="@+id/activity_shot_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        doctor:barBackground="@color/color66000000"
+        doctor:function="left_text|right_btn"
+        doctor:leftText="@string/quit"
+        doctor:leftTextClick="onLeftClick"
+        doctor:leftTextColor="@color/text_color_white_b3b3b3"
+        doctor:leftTextDrawableLeft="@drawable/ic_actionbar_back_white"
+        doctor:rightBtnClick="onRightClick"
+        doctor:rightBtnImage="@drawable/ic_actionbar_more_white" />
+
+    <LinearLayout
+        android:id="@+id/activity_capture_desc_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_shot_bar"
+        android:background="@color/color66000000"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/activity_capture_appointment_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/number"
+            android:textColor="@color/c_white"
+            android:textSize="@dimen/f_16sp" />
+
+        <TextView
+            android:id="@+id/activity_capture_patient_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="@string/patient_number"
+            android:textColor="@color/c_white"
+            android:textSize="@dimen/f_16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_capture_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/activity_capture_layout_pl"
+        android:background="@color/color_4c4c4c"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_capture_uvc_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/high_shot_instrument"
+                android:textColor="@color/c_white"
+                android:textSize="@dimen/f_14sp" />
+
+            <TextView
+                android:id="@+id/activity_capture_dermatoscope_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:text="@string/dermatoscope"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/f_14sp" />
+
+            <TextView
+                android:id="@+id/activity_capture_camera_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/mobile_shooting"
+                android:textColor="@color/color999999"
+                android:textSize="@dimen/f_14sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/activity_capture_capture_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_btn_capture" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/activity_capture_mask_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_cc000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/activity_capture_pic_layout_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <cn.longmaster.ihuvc.view.ProportionLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            doctor:scaleSize="1.33">
+
+            <ImageView
+                android:id="@+id/activity_capture_pic_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </cn.longmaster.ihuvc.view.ProportionLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="14dp"
+            android:paddingLeft="58dp"
+            android:paddingRight="58dp"
+            android:paddingTop="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/be_uploading"
+                android:textColor="@color/c_white"
+                android:textSize="@dimen/f_14sp" />
+
+            <ProgressBar
+                android:id="@+id/activity_capture_progressbar"
+                style="@style/progress_horizontal_upload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
