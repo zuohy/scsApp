@@ -11,6 +11,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.webkit.DownloadListener;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -58,7 +59,7 @@ public class MainActivity extends BaseActivity implements MessageStateChangeList
     @FindViewById(R.id.activity_browser_msg_imagebutton)
     private ImageButton msgRemind;
     @FindViewById(R.id.activity_browser_back_imagebutton)
-    private ImageButton backButton;
+    private TextView backButton;
     @FindViewById(R.id.activity_browser_browser_wv)
     private WebView mNetworkMonitorWv;//状态监控
 
@@ -123,7 +124,7 @@ public class MainActivity extends BaseActivity implements MessageStateChangeList
         mNetworkMonitorWv = (WebView) findViewById(R.id.activity_browser_browser_wv);
 
         mNetworkMonitorWv.setBackgroundColor(0);
-        //初始化状态监控器
+//        初始化状态监控器
         mNetworkMonitorWv.getSettings().setDefaultTextEncodingName("UTF-8");
         mNetworkMonitorWv.getSettings().setSupportZoom(true);
         mNetworkMonitorWv.getSettings().setBuiltInZoomControls(true);
@@ -132,12 +133,25 @@ public class MainActivity extends BaseActivity implements MessageStateChangeList
         mNetworkMonitorWv.getSettings().setUseWideViewPort(true);
         mNetworkMonitorWv.getSettings().setLoadWithOverviewMode(true);
         mNetworkMonitorWv.clearCache(true);
+
         mNetworkMonitorWv.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 return false;
             }
         });
+
+        mNetworkMonitorWv.setWebChromeClient(new WebChromeClient(){
+            @Override
+            public void onReceivedTitle(WebView view, String title) {
+                // TODO Auto-generated method stub
+//                textView.setText(title);
+                super.onReceivedTitle(view, title);
+            }
+        });
+        mNetworkMonitorWv.setDownloadListener(new MyDownloadStart());
+
+
 
         //getAuthenticationInfo(CODE_NETWOR_KMONITOR);
         String networkMonitorUrl = AppConfig.getNetworkMonitorUrl()
@@ -348,4 +362,19 @@ public class MainActivity extends BaseActivity implements MessageStateChangeList
     }
 
 
+    class MyDownloadStart implements DownloadListener {
+
+        @Override
+        public void onDownloadStart(String url, String userAgent,
+                                    String contentDisposition, String mimetype, long contentLength) {
+            // TODO Auto-generated method stub
+            //调用自己的下载方式
+//          new HttpThread(url).start();
+            //调用系统浏览器下载
+            Uri uri = Uri.parse(url);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }
+
+    }
 }
